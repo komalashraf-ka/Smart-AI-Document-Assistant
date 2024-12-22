@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Documentation Assistant</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet.css') }}">
+   
+   
+</head>
+<body>
+    <div class="background-icons">
+        <img src="https://img.icons8.com/color/100/000000/pdf.png" alt="PDF" style="top: 10%; left: 20%;">
+        <img src="https://img.icons8.com/color/100/000000/ms-excel.png" alt="Excel" style="top: 30%; left: 50%;">
+        <img src="https://img.icons8.com/color/100/000000/txt.png" alt="Text" style="top: 50%; left: 70%;">
+        <img src="https://img.icons8.com/color/100/000000/json.png" alt="JSON" style="top: 70%; left: 30%;">
+        <img src="https://img.icons8.com/color/100/000000/csv.png" alt="CSV" style="top: 90%; left: 80%;">
+        <img src="https://img.icons8.com/color/100/000000/txt.png" alt="Text" style="bottom: 50%; left: 10%;">
+        <img src="https://img.icons8.com/color/100/000000/json.png" alt="JSON" style="top: 30%; right: 10%;">
+        <img src="https://img.icons8.com/color/100/000000/csv.png" alt="CSV" style="top: 80%; left: 10%;">
+        <img src="https://img.icons8.com/color/100/000000/pdf.png" alt="PDF" style="top: 10%; right: 20%;">
+
+
+
+
+       
+   
+    </div>
+    <div class="title">AI Documentation Assistant</div>
+
+
+    <!-- Chat Container -->
+    <div class="chat-container" id="chat-container">
+        <div class="chat-messages" id="chat-messages"></div>
+        <form class="chat-input" id="questionForm" enctype="multipart/form-data">
+            <label for="file-upload" title="Attach a file">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
+                    <path d="M16.5,6.5a4.5,4.5,0,0,0-9,0V15a3.5,3.5,0,0,0,7,0V8.5a2.5,2.5,0,0,0-5,0V14a1.5,1.5,0,0,0,3,0V9h-1v5a.5.5,0,0,1-1,0V8.5a1.5,1.5,0,0,1,3,0V15a2.5,2.5,0,0,1-5,0V6.5a3.5,3.5,0,0,1,7,0V15a4.5,4.5,0,0,1-9,0V8.5H6V15a5.5,5.5,0,0,0,11,0Z"/>
+                </svg>
+            </label>
+           
+            <input type="file" id="file-upload" name="file">
+            <textarea placeholder="Message AI Assistant..." name="message" id="message-input"></textarea>
+            <button type="submit" id="send-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                    <path d="M2 21l21-9-21-9v7l15 2-15 2z" fill="none" stroke="white" stroke-width="2"/>
+                </svg>
+            </button>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
+
+
